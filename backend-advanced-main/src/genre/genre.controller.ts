@@ -4,7 +4,6 @@ import {
 	Delete,
 	Get,
 	HttpCode,
-	Logger,
 	NotFoundException,
 	Param,
 	Post,
@@ -13,8 +12,8 @@ import {
 	UsePipes,
 	ValidationPipe,
 } from '@nestjs/common'
-import { Auth } from 'backend-advanced-main/src/auth/decorators/auth.decorator'
-import { IdValidationPipe } from 'backend-advanced-main/src/pipes/id.validation.pipe'
+import { Auth } from '../auth/decorators/auth.decorator'
+import { IdValidationPipe } from '../pipes/id.validation.pipe'
 import { CreateGenreDto } from './dto/create-genre.dto'
 import { GenreService } from './genre.service'
 

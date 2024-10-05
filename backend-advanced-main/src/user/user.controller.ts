@@ -12,13 +12,13 @@ import {
 	UsePipes,
 	ValidationPipe,
 } from '@nestjs/common'
-import { User } from './decorators/user.decorator'
-import { UserService } from './user.service'
-import { Auth } from 'backend-advanced-main/src/auth/decorators/auth.decorator'
-import { UpdateDto } from './dto/update.dto'
-import { IdValidationPipe } from 'backend-advanced-main/src/pipes/id.validation.pipe'
-import { UserModel } from './user.model'
 import { Types } from 'mongoose'
+import { Auth } from '../auth/decorators/auth.decorator'
+import { IdValidationPipe } from '../pipes/id.validation.pipe'
+import { User } from './decorators/user.decorator'
+import { UpdateDto } from './dto/update.dto'
+import { UserModel } from './user.model'
+import { UserService } from './user.service'
 
 @Controller('users')
 export class UserController {

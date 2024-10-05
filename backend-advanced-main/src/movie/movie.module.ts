@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common'
 import { TypegooseModule } from 'nestjs-typegoose'
-import { UserModule } from 'backend-advanced-main/src/user/user.module'
+import { UserModule } from '../user/user.module'
 import { MovieController } from './movie.controller'
 import { MovieModel } from './movie.model'
 import { MovieService } from './movie.service'

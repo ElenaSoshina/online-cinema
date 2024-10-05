@@ -12,11 +12,11 @@ import {
 	UsePipes,
 	ValidationPipe,
 } from '@nestjs/common'
+import { Types } from 'mongoose'
+import { Auth } from '../auth/decorators/auth.decorator'
 import { IdValidationPipe } from '../pipes/id.validation.pipe'
 import { CreateMovieDto } from './dto/create-movie.dto'
 import { MovieService } from './movie.service'
-import { Auth } from 'backend-advanced-main/src/auth/decorators/auth.decorator'
-import { Types } from 'mongoose'
 
 @Controller('movies')
 export class MovieController {

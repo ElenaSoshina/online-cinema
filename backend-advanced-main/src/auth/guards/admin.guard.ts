@@ -5,7 +5,7 @@ import {
 	Injectable,
 } from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
-import { UserModel } from 'backend-advanced-main/src/user/user.model'
+import type { UserModel } from '../../user/user.model'
 
 @Injectable()
 export class OnlyAdminGuard implements CanActivate {

@@ -1,7 +1,7 @@
 import { prop, Ref } from '@typegoose/typegoose'
 import { Base, TimeStamps } from '@typegoose/typegoose/lib/defaultClasses'
-import { MovieModel } from 'backend-advanced-main/src/movie/movie.model'
-import { UserModel } from 'backend-advanced-main/src/user/user.model'
+import { MovieModel } from '../movie/movie.model'
+import { UserModel } from '../user/user.model'
 
 export interface RatingModel extends Base {}
 

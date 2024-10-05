@@ -2,11 +2,11 @@ import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { JwtModule } from '@nestjs/jwt'
 import { TypegooseModule } from 'nestjs-typegoose'
-import { getJWTConfig } from 'backend-advanced-main/src/config/jwt.conig'
-import { JwtStrategy } from './strategies/jwt.strategy'
-import { AuthController } from './auth.controller'
+import { getJWTConfig } from '../config/jwt.conig'
 import { UserModel } from '../user/user.model'
+import { AuthController } from './auth.controller'
 import { AuthService } from './auth.service'
+import { JwtStrategy } from './strategies/jwt.strategy'
 
 @Module({
 	controllers: [AuthController],
